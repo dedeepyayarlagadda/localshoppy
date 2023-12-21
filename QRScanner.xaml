@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:string="clr-namespace:demo.Resources"
+             x:Class="demo.QRScanner"
+             Title="QRScanner"
+             Unloaded="OnContentPageUnloaded"
+             Shell.TabBarIsVisible="False">
+    <Shell.TitleView >
+        <HorizontalStackLayout HorizontalOptions="Start">
+            <Image Source="localshoppy_yellow.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10"/>
+            <Label Text="{x:Static string:Strings.scan_product}" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0" TextColor="White"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    <Grid>
+        <zxing:CameraBarcodeReaderView x:Name="barcodeReader" BarcodesDetected="CameraBarcodeReaderView_BarcodesDetected" IsDetecting="True" Margin="100,110,100,110" BackgroundColor="White" />     
+    </Grid>
+</ContentPage>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="demo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:demo"
+    xmlns:strings="clr-namespace:demo.Resources"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:avatarview="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+    xmlns:controls="clr-namespace:demo.SearchHandlers"
+    xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutWidth="250"
+    Shell.TabBarBackgroundColor="{AppThemeBinding Light=#d7cef5, Dark={StaticResource White}}"
+    CurrentItem="{x:Reference loginPage}">
+    <Shell.TitleView >
+        <HorizontalStackLayout HorizontalOptions="Start">
+            <!--<toolkit:AvatarView ImageSource="localshoppy_yellow.png" Text="IS"/>            
+            <avatarview:SfAvatarView 
+                           ContentType="Custom"
+                           ImageSource="localshoppy_yellow.png"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"   
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           CornerRadius="50"
+                           
+                />-->
+            <Image Source="localshoppy_yellow.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10"/>
+            <Label Text="Localshoppy" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0"/>
+        </HorizontalStackLayout>            
+    </Shell.TitleView>
+    <Shell.ToolbarItems>
+        <ToolbarItem x:Name="Search"  IconImageSource="icon_search.svg" Order="Primary" Clicked="OnSearchClick" />
+        <!--<ToolbarItem x:Name="Settings" IconImageSource="icon_gear.svg" Order="Primary" Clicked="OnClickOfSettings"/>-->
+        <ToolbarItem Text="Add Product" IconImageSource="shopping_bag.png" Order="Secondary" Clicked="AddProduct"/>
+        <ToolbarItem Text="" Order="Secondary" />
+    </Shell.ToolbarItems>
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+			<Grid>
+				<Image Aspect="AspectFill"
+                       Source="localshoppy_redisigned_title.jpg"/>
+			</Grid>
+		</DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem Title="{x:Static strings:Strings.home}" FlyoutDisplayOptions="AsSingleItem" Icon="home.png">
+        <Tab Title="{x:Static strings:Strings.baby}" Icon="baby.png">
+            <ShellContent Title="Baby"  ContentTemplate="{DataTemplate local:Baby}" Route="Baby"/>                                  
+        </Tab>
+        <Tab Title="{x:Static strings:Strings.men}" Icon="men.png" >
+            <ShellContent Title="Men"  ContentTemplate="{DataTemplate local:Men} "/>
+        </Tab>
+        <Tab Title="{x:Static strings:Strings.kids}" Icon="kids.png">
+            <ShellContent Title="Kids" ContentTemplate="{DataTemplate local:Kids}"/>
+        </Tab>
+        <Tab Title="{x:Static strings:Strings.women}" Icon="women.png">
+            <ShellContent Title="Women" ContentTemplate="{DataTemplate local:Women}"/>
+        </Tab>
+        <Tab Title="{x:Static strings:Strings.home_decor}" Icon="home_decor.png">
+            <ShellContent Title="Women" ContentTemplate="{DataTemplate local:HomeDecor}"/>
+        </Tab>
+        <Tab Title="{x:Static strings:Strings.electronics}" Icon="electronics.png">
+            <ShellContent Title="Women" ContentTemplate="{DataTemplate local:Electronics}"/>
+        </Tab>
+
+    </FlyoutItem>
+     
+    <ShellContent 
+        Title="loading"
+        ContentTemplate="{DataTemplate local:LoadingPage}"
+        Route="loading"
+        FlyoutItemIsVisible="False"
+         />
+    <ShellContent x:Name="loginPage"
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="login"
+        FlyoutItemIsVisible="False"       
+        Shell.FlyoutBehavior="Disabled"
+     />
+    <ShellContent 
+        Title="Sign Up"
+        ContentTemplate="{DataTemplate local:Register}"
+        Route="Register"
+        FlyoutItemIsVisible="False"
+     />
+    <MenuItem Text="{x:Static strings:Strings.about_user_agreement}" IconImageSource="contract.png"  />
+    <MenuItem Text="{x:Static strings:Strings.about_check_updates}" IconImageSource="update.png"/>
+    <MenuItem Text="{x:Static strings:Strings.about_contact_us}" IconImageSource="communicate.png"/>
+    <MenuItem Text="{x:Static strings:Strings.about_helpCenter}" IconImageSource="information.png"/>
+    <MenuItem Text="{x:Static strings:Strings.about_license}" IconImageSource="certificate.png"/>
+    <ShellContent Title="About" Icon="icon_about.png" ContentTemplate="{DataTemplate local:AboutPage}" IsEnabled="False"/>
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Button Text="Logout" Clicked="LogoutButton_Clicked" HorizontalOptions="FillAndExpand" CornerRadius="0"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
+
+</Shell>

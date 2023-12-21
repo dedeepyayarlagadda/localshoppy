@@ -1,0 +1,157 @@
+﻿{
+    "IsSuccess": true,
+    "ReturnMessage": "Data fetched successfully",
+    "Data": {
+        "added": false,
+        "address": 0,
+        "controllable": false,
+        "dashboard_display": false,
+        "description": "Chiller 09",
+        "enabled": true,
+        "imei": "",
+        "model": "/console/api/v1/model/ZETO_2/",
+        "resource_uri": "/console/api/v2/unit/0013A2004189AE27/",
+        "sensors": [
+            {
+                "alarm_delay_max": 0,
+                "alarm_delay_min": 0,
+                "alarm_recovery_period_max": 0,
+                "alarm_recovery_period_min": 0,
+                "auto_clear": true,
+                "enabled": true,
+                "id": 91149,
+                "key": "1001",
+                "max_temp": "4.0",
+                "min_temp": "-5.0",
+                "offset": "0.0",
+                "report_interval": 300,
+                "resource_uri": "/console/api/v2/unitconfiguration/91149/",
+                "sensor_description": "Air Temp",
+                "staleness_period": 3600,
+                "unit_id": "0013A2004189AE27",
+                "unit_of_measurement": {
+                    "id": 4,
+                    "um_abbreviated": "°C",
+                    "um_full": "Celsius",
+                    "um_index": "C",
+                    "um_variable": "Temperature"
+                },
+                "visible": true,
+                "warning_delay_max": "0",
+                "warning_delay_min": "0"
+            }
+        ],
+        "standalone": true,
+        "subscribed": false,
+        "subscribers": [
+            2264,
+            353,
+            1980,
+            2027,
+            2319,
+            2320,
+            2187,
+            2215,
+            2251,
+            2252,
+            2255,
+            2258
+        ],
+        "tags": [
+            "chill"
+        ],
+        "timeout": 900,
+        "uncleared_alarms": 0,
+        "unit_id": "0013A2004189AE27",
+        "unit_offline": false,
+        "gateway": {
+            "city": "",
+            "country_name": "",
+            "estimate": false,
+            "gateway_id": "RMO3032",
+            "ip": "",
+            "region_name": "",
+            "premises": {
+                "id": 471,
+                "company": 23,
+                "extended_Address": "Castletroy",
+                "locality": "Limerick",
+                "name": "138 Limerick Dublin-Rd",
+                "street_address": "Dublin Rd",
+                "resource_uri": "/console/api/v2/premises/138 Limerick Dublin-Rd/",
+                "slug": "138-limerick-dublin-rd",
+                "region": {
+                    "country": "Ireland",
+                    "name": "Limerick",
+                    "resource_uri": "/console/api/v2/region/53/"
+                }
+            }
+        },
+        "unitGraphValues": {
+            "objects": [
+                {
+                    "readings": {
+                        "1001": 0.0
+                    },
+                    "unit": "0013A2004189AE27",
+                    "offset": 0.0,
+                    "gateway": "RMO3032",
+                    "id": "0013A2004189AE27-1001",
+                    "gain": 1,
+                    "datetime": "2023-11-17T23:55:00",
+                    "timestamp": 1700265300,
+                    "localized_readings": {
+                        "1001": "0"
+                    }
+                },
+                {
+                    "readings": {
+                        "1001": 2.0
+                    },
+                    "unit": "0013A2004189AE27",
+                    "offset": 0.0,
+                    "gateway": "RMO3032",
+                    "id": "0013A2004189AE27-1001",
+                    "gain": 1,
+                    "datetime": "2023-11-17T23:50:00",
+                    "timestamp": 1700265000,
+                    "localized_readings": {
+                        "1001": "2"
+                    }
+                },
+                {
+                    "readings": {
+                        "1001": 0.0
+                    },
+                    "unit": "0013A2004189AE27",
+                    "offset": 0.0,
+                    "gateway": "RMO3032",
+                    "id": "0013A2004189AE27-1001",
+                    "gain": 1,
+                    "datetime": "2023-11-17T23:40:00",
+                    "timestamp": 1700264400,
+                    "localized_readings": {
+                        "1001": "0"
+                    }
+                },
+                {
+                    "readings": {
+                        "1001": 25.0
+                    },
+                    "unit": "0013A2004189AE27",
+                    "offset": 0.0,
+                    "gateway": "RMO3032",
+                    "id": "0013A2004189AE27-1001",
+                    "gain": 1,
+                    "datetime": "2023-11-17T23:35:00",
+                    "timestamp": 1700264100,
+                    "localized_readings": {
+                        "1001": "25"
+                    }
+                }
+            ],
+            "count": 4
+        }
+    },
+    "count": 0
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="demo.HamburgerMenu"
+             xmlns:strings="clr-namespace:demo.Resources"
+             Title="HamburgerMenu"
+             Shell.NavBarIsVisible="True">
+    
+    <VerticalStackLayout>
+        <Label Text="{x:Static strings:Strings.about}"
+           FontSize="Medium"
+           FontAttributes="Bold"
+           HorizontalOptions="Start"
+           Padding="0,25,10,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateClicked" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Line BackgroundColor="LightGrey"></Line>
+        <Label Text="{x:Static strings:Strings.about_user_agreement}"
+           FontSize="Medium"
+           FontAttributes="Bold"
+           HorizontalOptions="Start"
+           Padding="0,25,10,0"/>   
+        <Line BackgroundColor="LightGrey"></Line>
+        <Label Text="{x:Static strings:Strings.about_check_updates}"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalOptions="Start"
+            Padding="0,25,10,0"/>
+        <Line BackgroundColor="LightGrey"></Line>
+        <Label Text="{x:Static strings:Strings.about_contact_us}"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalOptions="Start"
+            Padding="0,25,10,0"/>
+        <Line BackgroundColor="LightGrey"></Line>
+        <Label Text="{x:Static strings:Strings.about_helpCenter}"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalOptions="Start"
+            Padding="0,25,10,0"/>
+        <Line BackgroundColor="LightGrey"></Line>
+        <Label Text="{x:Static strings:Strings.about_license}"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalOptions="Start"
+            Padding="0,25,10,0"/>
+        <Line BackgroundColor="LightGrey"></Line>
+    </VerticalStackLayout>
+</ContentPage>

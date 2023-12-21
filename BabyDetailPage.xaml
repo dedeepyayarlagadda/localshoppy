@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="demo.BabyDetailPage"
+             xmlns:strings="clr-namespace:demo.Resources"
+             xmlns:viewmodel="clr-namespace:demo.ViewModel"     
+             xmlns:local="clr-namespace:demo;assembly=demo"
+             x:DataType = "viewmodel:BabyDetailViewModel"
+             >
+    <!--Title="{x:Static strings:Strings.test} Text="{x:Static strings:Strings.baby0to6months}""-->
+    <Shell.TitleView >
+        <HorizontalStackLayout HorizontalOptions="Start">
+            <Image Source="localshoppy_yellow.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10"/>
+            <Label Text="Localshoppy" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0" TextColor="White"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    <StackLayout Padding="10" Spacing="10">
+        <Image Source="babyhome.png" Aspect="AspectFill" HeightRequest="200"/>
+
+        <Label Text="{x:Static strings:Strings.baby0to6months}"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start"
+             FontSize="20" />
+        <HorizontalStackLayout>
+            <Label Text="Size: "></Label>
+            <Label Text="0-6M"></Label>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="MRP: "></Label>
+            <Label Text="$1000"></Label>
+        </HorizontalStackLayout>
+
+        <Button Text="Add to Cart" HorizontalOptions="FillAndExpand" VerticalOptions="End" />
+    </StackLayout>
+
+</ContentPage>

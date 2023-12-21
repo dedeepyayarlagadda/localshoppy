@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="demo.Baby"
+             xmlns:viewmodel="clr-namespace:demo.ViewModel"
+             xmlns:local="clr-namespace:demo;assembly=demo"
+             xmlns:strings="clr-namespace:demo.Resources"
+             xmlns:test="clr-namespace:demo"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:modal="clr-namespace:demo.Modal"
+             Shell.TabBarIsVisible="True"
+             >
+    <Shell.TitleView >
+        <HorizontalStackLayout HorizontalOptions="Start">
+            <Image Source="localshoppy_yellow.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10"/>
+            <Label Text="Localshoppy" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0" TextColor="White"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+    <Grid RowDefinitions="100, auto,*"
+              ColumnDefinitions=".75*, .25*"
+              Padding="1"
+              RowSpacing="1"
+              ColumnSpacing="10">
+        <Image Grid.Row="0"  Grid.ColumnSpan="2" Source="baby.png" />
+        <!--<CollectionView Grid.Row="1" Grid.ColumnSpan="2" ItemsLayout="VerticalGrid, 2" ItemsSource="{Binding BabyItems}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="5">
+                        <Frame BackgroundColor="Beige">
+                            --><!--<StackLayout>
+                        <Image Source="{Binding ImageUrl}"/>
+                        <Label Text="{Binding Description}" />
+                    </StackLayout>--><!--
+                            <FlexLayout Direction="Column" AlignItems="Center"  BackgroundColor="Beige">
+                                <Image Source="{Binding ImageUrl}"  HeightRequest="110" WidthRequest="150"/>
+                                <Label Text="{Binding Description}" FontSize="16" Padding="0,10,0,0" />
+                            </FlexLayout>
+                        </Frame>
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>-->
+        <CollectionView Grid.Row="1" Grid.ColumnSpan="2" ItemsLayout="VerticalGrid, 2" SelectionMode="None" >
+            
+        <CollectionView.ItemsSource >
+                
+                <x:Array Type="{x:Type modal:BabyItem}" >
+                    <modal:BabyItem Name="{x:Static strings:Strings.baby0to6months}"   ImageName="babyhome.png" />
+                    <modal:BabyItem Name="{x:Static strings:Strings.baby6to12months}" ImageName="babys_from_6_12.png" />
+                    <modal:BabyItem Name="{x:Static strings:Strings.toys}" ImageName="toys.png" />
+                    <modal:BabyItem Name="{x:Static strings:Strings.diapering}" ImageName="diaper.png" />
+                    <modal:BabyItem Name="{x:Static strings:Strings.character_shop}" ImageName="unique_dress.jpg" />
+                    <modal:BabyItem Name="{x:Static strings:Strings.kids_room}" ImageName="baby_with_toy.jpg" />
+                </x:Array>
+            </CollectionView.ItemsSource>
+        
+            <CollectionView.ItemTemplate >
+                    <DataTemplate>
+                        <Grid Padding="5">
+                            <Frame>
+                                <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="SpaceEvenly">
+                                <Image Source="{Binding ImageName}" Aspect="AspectFit" HeightRequest="100" WidthRequest="150"/>
+                                <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" FontAttributes="Bold" Padding="0,10,0,0" TextColor="{AppThemeBinding Dark={StaticResource Black}}" />
+                                </FlexLayout>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=TapCommand}"
+                                            CommandParameter="{Binding Title}"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </Grid>
+                </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+    </Grid>
+</ContentPage>

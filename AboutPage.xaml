@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:strings="clr-namespace:demo.Resources"
+             xmlns:local="clr-namespace:demo;assembly=demo"
+             x:Class="demo.AboutPage"          
+             Title="{x:Static strings:Strings.about}"
+             
+             >
+    <Shell.TitleView>
+        <Label Text="{x:Static strings:Strings.about}" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0" TextColor="White"/>
+    </Shell.TitleView>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <VerticalStackLayout Grid.Row="0" Padding="10">
+            <Image Source="localshoppy_redisigned_title.jpg"/>
+            <Label Text="{x:Static strings:Strings.about_app_desc}" Padding="0,10"></Label>
+            <Label x:Name="AppVersion"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Padding="0,10,0,0"
+            />
+            <Line BackgroundColor="LightGrey"></Line>
+        </VerticalStackLayout>
+        <HorizontalStackLayout 
+            Grid.Row="1"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            Margin="10">
+            <Image Source="copyright.png" HeightRequest="25" />
+            <Label x:Name="CopyRight" Padding="10"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>demo</name>
+    </assembly>
+    <members>
+        <member name="T:demo.Resources.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about">
+            <summary>
+              Looks up a localized string similar to About.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_app_desc">
+            <summary>
+              Looks up a localized string similar to Revolutionizing local business connectivity, our app seamlessly connects customers with nearby stores, fostering community support. Enjoy the convenience of doorstep delivery, enhancing the local shopping experience..
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_check_updates">
+            <summary>
+              Looks up a localized string similar to Check for Updates.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_contact_us">
+            <summary>
+              Looks up a localized string similar to Contact Us.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_copyright">
+            <summary>
+              Looks up a localized string similar to Infinira Confidential.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_helpCenter">
+            <summary>
+              Looks up a localized string similar to Help Center.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_license">
+            <summary>
+              Looks up a localized string similar to License.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_user_agreement">
+            <summary>
+              Looks up a localized string similar to User Agreement.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.about_version">
+            <summary>
+              Looks up a localized string similar to Version.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.add">
+            <summary>
+              Looks up a localized string similar to Add.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.add_product">
+            <summary>
+              Looks up a localized string similar to Add Product.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.app_name">
+            <summary>
+              Looks up a localized string similar to Localshoppy.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.are_you_sure">
+            <summary>
+              Looks up a localized string similar to Are you sure.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.baby">
+            <summary>
+              Looks up a localized string similar to Baby.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.baby0to6months">
+            <summary>
+              Looks up a localized string similar to Baby Fashion 0 to 6 Months.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.baby6to12months">
+            <summary>
+              Looks up a localized string similar to Baby Fashion 6 to 12 Months.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.cancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.character_shop">
+            <summary>
+              Looks up a localized string similar to Character Shop.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.diapering">
+            <summary>
+              Looks up a localized string similar to Diapering.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.electronics">
+            <summary>
+              Looks up a localized string similar to Electronics.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.home">
+            <summary>
+              Looks up a localized string similar to Home.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.home_decor">
+            <summary>
+              Looks up a localized string similar to Home Decor.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.kids">
+            <summary>
+              Looks up a localized string similar to Kids.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.kids_room">
+            <summary>
+              Looks up a localized string similar to Kids Room.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login">
+            <summary>
+              Looks up a localized string similar to Login.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_check_authentication">
+            <summary>
+              Looks up a localized string similar to Checking Authentication ....
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_dont_hv_acnt">
+            <summary>
+              Looks up a localized string similar to Don&apos;t have an account?.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_password">
+            <summary>
+              Looks up a localized string similar to Password.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_signUp">
+            <summary>
+              Looks up a localized string similar to Sign Up.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_username">
+            <summary>
+              Looks up a localized string similar to Username.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.login_welcomeNote">
+            <summary>
+              Looks up a localized string similar to Welcome to Localshoppy.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.logout">
+            <summary>
+              Looks up a localized string similar to Log out.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men">
+            <summary>
+              Looks up a localized string similar to Men.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_casualShoes">
+            <summary>
+              Looks up a localized string similar to Casual Shoes.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_formals">
+            <summary>
+              Looks up a localized string similar to Formal Pants.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_formalShirts">
+            <summary>
+              Looks up a localized string similar to Formal Shirts.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_formalShoes">
+            <summary>
+              Looks up a localized string similar to Formal Shoes.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_grooming">
+            <summary>
+              Looks up a localized string similar to Grooming.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_jeans">
+            <summary>
+              Looks up a localized string similar to Jeans.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.men_tShirts">
+            <summary>
+              Looks up a localized string similar to T-Shirts.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.ok">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.scan_product">
+            <summary>
+              Looks up a localized string similar to Scan Product.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.scanned_text">
+            <summary>
+              Looks up a localized string similar to Scanned Text.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.settings">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.Shirt40">
+            <summary>
+              Looks up a localized string similar to Shirts 40.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.test">
+            <summary>
+              Looks up a localized string similar to test.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.theme_dark">
+            <summary>
+              Looks up a localized string similar to Dark Theme.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.theme_light">
+            <summary>
+              Looks up a localized string similar to Light Theme.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.title">
+            <summary>
+              Looks up a localized string similar to localshoppy.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.toys">
+            <summary>
+              Looks up a localized string similar to Toys.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.women">
+            <summary>
+              Looks up a localized string similar to Women.
+            </summary>
+        </member>
+        <member name="P:demo.Resources.Strings.you_want_to_add">
+            <summary>
+              Looks up a localized string similar to You want to add?.
+            </summary>
+        </member>
+        <member name="T:demo.ViewModel.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:demo.ViewModel.MainViewModel.Text">
+            <inheritdoc cref="F:demo.ViewModel.MainViewModel.text"/>
+        </member>
+        <member name="P:demo.ViewModel.MainViewModel.Items">
+            <inheritdoc cref="F:demo.ViewModel.MainViewModel.items"/>
+        </member>
+        <member name="F:demo.ViewModel.MainViewModel.tapCommand">
+            <summary>The backing field for <see cref="P:demo.ViewModel.MainViewModel.TapCommand"/>.</summary>
+        </member>
+        <member name="P:demo.ViewModel.MainViewModel.TapCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:demo.ViewModel.MainViewModel.Tap(System.String)"/>.</summary>
+        </member>
+        <member name="F:demo.ViewModel.MainViewModel.signUpButton_ClickedCommand">
+            <summary>The backing field for <see cref="P:demo.ViewModel.MainViewModel.SignUpButton_ClickedCommand"/>.</summary>
+        </member>
+        <member name="P:demo.ViewModel.MainViewModel.SignUpButton_ClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:demo.ViewModel.MainViewModel.SignUpButton_Clicked"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+    </members>
+</doc>

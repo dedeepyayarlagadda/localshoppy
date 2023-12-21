@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:strings="clr-namespace:demo.Resources"
+             xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
+             x:Class="demo.Women"
+             >
+        <Shell.TitleView >
+        <HorizontalStackLayout HorizontalOptions="Start">
+            <Image Source="localshoppy_yellow.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10"/>
+            <Label Text="Localshoppy" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" Padding="5,0,0,0" TextColor="White"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+        <Image Source="female_icon.png" HeightRequest="175"></Image>
+        <Button
+            Text="Click me"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnCounterClicked"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Info"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnInfoClicked"
+            HorizontalOptions="Center"
+            CornerRadius="10"/>
+        <Button
+            Text="Click to enter Text"
+            SemanticProperties.Hint="Entry input mopup"
+            Clicked="OnEntryInputClicked"
+            HorizontalOptions="Center"
+            CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

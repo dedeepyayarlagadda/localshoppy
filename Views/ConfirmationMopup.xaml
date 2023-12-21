@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+	xmlns:mopupAnim="clr-namespace:Mopups.Animations;assembly=Mopups"
+    x:Class="demo.Views.ConfirmationMopup"
+	xmlns:string="clr-namespace:demo.Resources"
+    Title="Custom_Mopup"  BackgroundColor="#80272727" CloseWhenBackgroundIsClicked="True" >
+    <VerticalStackLayout StyleClass="{x:StaticResource default_mopup}" VerticalOptions="Center" HorizontalOptions="Center" Background="{StaticResource Gray500}" Padding="10,0">
+        <Grid RowDefinitions="40,10,*,60" ColumnDefinitions="*,*">
+            <Label Grid.Row="0" Grid.ColumnSpan="2" x:Name="mopupTitle" 
+                    Text="Mopup Title"
+                    FontAttributes="Bold"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start" Padding="5,10,5,0"
+                    FontSize="Subtitle"/>
+            <BoxView Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="1" Color="{x:StaticResource Gray300}"/>
+            <Label x:Name="modalBody"  Grid.Row="2" Grid.ColumnSpan="2" Text="" HorizontalOptions="Start" VerticalOptions="Start" Padding="5,10,5,0"/>
+            <Button x:Name="OKButton"  Clicked="OnOKClick" Grid.Row="3" Grid.Column="0"  Text="{x:Static string:Strings.ok}" WidthRequest="130" HeightRequest="40" VerticalOptions="Center" BackgroundColor="{x:StaticResource Gray600}" TextColor="White"  Padding="10,0,10,0" CornerRadius="0" />
+            <Button x:Name="CancelButton" Clicked="OnCancelClick" Grid.Row="3" Grid.Column="1"  Text="{x:Static string:Strings.cancel}" WidthRequest="130" HeightRequest="40" VerticalOptions="Center" BackgroundColor="{x:StaticResource Gray600}" TextColor="White"  Padding="10,0,10,0" CornerRadius="0" />
+          
+        </Grid>        
+    </VerticalStackLayout>
+    
+    <!--<Grid RowDefinitions="40,10,*,60" ColumnDefinitions="*,*">
+        
+    </Grid>
+    <Border Style="{StaticResource default_mopup}" >
+        
+    </Border>-->
+</mopups:PopupPage>

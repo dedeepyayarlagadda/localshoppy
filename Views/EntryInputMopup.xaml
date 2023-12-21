@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:string="clr-namespace:demo.Resources"
+             x:Class="demo.Views.EntryInputMopup"
+             Title="EntryInputMopup">
+    <VerticalStackLayout StyleClass="{x:StaticResource default_mopup}" VerticalOptions="Center" HorizontalOptions="Fill" Background="{StaticResource Gray500}" Padding="10,0">
+        <Grid RowDefinitions="40,10,*,*,60" ColumnDefinitions="*,*">
+            <Label Grid.Row="0" Grid.ColumnSpan="2" x:Name="mopupTitle" 
+                 Text="Mopup Title"
+                 FontAttributes="Bold"
+                 VerticalOptions="Start" 
+                 HorizontalOptions="Start" Padding="5,10,5,0"
+                 FontSize="Subtitle"/>
+            <BoxView Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="1" Color="{x:StaticResource Gray300}"/>
+            <Label x:Name="modalBody"  Grid.Row="2" Grid.ColumnSpan="2" Text="" HorizontalOptions="Start" VerticalOptions="Start" Padding="5,10,5,0"/>
+            <Entry x:Name="userInput" Grid.Row="3" PlaceholderColor="Grey" Placeholder="Enter your text..."/>
+            <Button x:Name="OKButton"   Grid.Row="4" Grid.Column="0"  Text="{x:Static string:Strings.ok}" WidthRequest="130" HeightRequest="40" VerticalOptions="Center" BackgroundColor="{x:StaticResource Gray600}" TextColor="White"  Padding="10,0,10,0" CornerRadius="0" />
+            <Button x:Name="CancelButton" Grid.Row="4" Grid.Column="1"  Text="{x:Static string:Strings.cancel}" WidthRequest="130" HeightRequest="40" VerticalOptions="Center" BackgroundColor="{x:StaticResource Gray600}" TextColor="White"  Padding="10,0,10,0" CornerRadius="0" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
