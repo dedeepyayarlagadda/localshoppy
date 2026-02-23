@@ -11,7 +11,7 @@ public partial class AboutPage : ContentPage
 	{
 		InitializeComponent();
         ResourceManager resourceManager = new ResourceManager("demo.Resources.Strings", Assembly.GetExecutingAssembly());
-        Console.WriteLine("Test from RS file: " + resourceManager.GetString("about"));
+        Console.WriteLine("Test from RSs file: " + resourceManager.GetString("about"));
         AppVersion.Text = resourceManager.GetString("about_version") + " "+ app_version;
         CopyRight.Text = year + " " + resourceManager.GetString("about_copyright");
         Console.WriteLine("App version: "+ AppVersion);
